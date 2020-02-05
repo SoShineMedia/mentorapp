@@ -3,11 +3,14 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Router, Route, Switch, Redirect } from "react-router-dom";
 
-import {Aside} from "./common/Aside";
-import {Footer} from "./common/Footer";
-import {Navbar} from "./common/Navbar";
+import Aside from "../common/Aside";
+import Footer from "../common/Footer";
+import Navbar from "../common/Navbar";
 
 class Default extends Component {
+    constructor(props) {
+        super(props);
+    }
   render() 
   {
     return (
@@ -24,7 +27,7 @@ class Default extends Component {
                 {/*-- Main content -*/}
                 <div class="content">
                 <div class="container">
-                
+                    {this.props.children}
                 </div>{/*-- /.container-fluid -*/}
                 </div>
                 {/*-- /.content -*/}

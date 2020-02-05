@@ -1,175 +1,190 @@
-<!-- Navbar -->
-  <nav style="top:0;width:100%;position:fixed" class="main-header navbar navbar-fixed-top navbar-expand-md navbar-light navbar-white">
-    <div class="container">
-      <a href="starter.html" class="navbar-brand">
-        <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-             style="opacity: .8">
-        <span class="brand-text font-weight-light">Mentorship Platform</span>
-      </a>
-      
-      <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+/* eslint-disable */
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { Router, Route, Switch, Redirect } from "react-router-dom";
 
-      <div class="collapse navbar-collapse order-3" id="navbarCollapse">
-        <!-- Left navbar links -->
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a href="starter.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link"></a>
-          </li>
-          <li class="nav-item dropdown">
-            <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Knowledge Base</a>
-            <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
-              <li><a href="question.html" class="dropdown-item">My Questions </a></li>
-              <li><a href="mentor.html" class="dropdown-item">My Mentors </a></li>
-              <li class="dropdown-divider"></li>
+class Aside extends Component {
+  render() {
+      return (
+   
+        <nav style={{top:0, width:100%, position:fixed}} className="main-header navbar navbar-fixed-top navbar-expand-md navbar-light navbar-white">
+            <div className="container">
+            <a href="starter.html" className="navbar-brand">
+                <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3"
+                    style="opacity: .8"/>
+                <span className="brand-text font-weight-light">Mentorship Platform</span>
+            </a>
+            
+            <button className="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+            </button>
 
-              <!-- Level two dropdown-->
-              <li class="dropdown-submenu dropdown-hover">
-                <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Industries</a>
-                <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
-                  <li>
-                    <a tabindex="-1" href="industry.html" class="dropdown-item">level 2</a>
-                  </li>
-                  <li><a href="#" class="dropdown-item">level 2</a></li>
-                  <li><a href="#" class="dropdown-item">level 2</a></li>
+            <div className="collapse navbar-collapse order-3" id="navbarCollapse">
+                {/*-- Left navbar links -*/}
+                <ul className="navbar-nav">
+                <li className="nav-item">
+                    <a href="starter.html" className="nav-link">Home</a>
+                </li>
+                <li className="nav-item">
+                    <a href="#" className="nav-link"></a>
+                </li>
+                <li className="nav-item dropdown">
+                    <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" className="nav-link dropdown-toggle">Knowledge Base</a>
+                    <ul aria-labelledby="dropdownSubMenu1" className="dropdown-menu border-0 shadow">
+                    <li><a href="question.html" className="dropdown-item">My Questions </a></li>
+                    <li><a href="mentor.html" className="dropdown-item">My Mentors </a></li>
+                    <li className="dropdown-divider"></li>
+
+                    {/*-- Level two dropdown-*/}
+                    <li className="dropdown-submenu dropdown-hover">
+                        <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" className="dropdown-item dropdown-toggle">Industries</a>
+                        <ul aria-labelledby="dropdownSubMenu2" className="dropdown-menu border-0 shadow">
+                        <li>
+                            <a tabindex="-1" href="industry.html" className="dropdown-item">level 2</a>
+                        </li>
+                        <li><a href="#" className="dropdown-item">level 2</a></li>
+                        <li><a href="#" className="dropdown-item">level 2</a></li>
+                        </ul>
+                    </li>
+                    {/*-- End Level two -*/}
+                    </ul>
+                </li>
+                <li className="nav-item dropdown">
+                    <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" className="nav-link dropdown-toggle">Projects</a>
+                    <ul aria-labelledby="dropdownSubMenu1" className="dropdown-menu border-0 shadow">
+                    <li><a href="#" className="dropdown-item">Add New </a></li>
+                    <li><a href="#" className="dropdown-item">Some other action</a></li>
+
+                    <li className="dropdown-divider"></li>
+
+                    {/*-- Level two dropdown-*/}
+                    <li className="dropdown-submenu dropdown-hover">
+                        <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" className="dropdown-item dropdown-toggle">My Projects</a>
+                        <ul aria-labelledby="dropdownSubMenu2" className="dropdown-menu border-0 shadow">
+                        <li>
+                            <a tabindex="-1" href="#" className="dropdown-item">level 2</a>
+                        </li>
+                        <li><a href="#" className="dropdown-item">level 2</a></li>
+                        <li><a href="#" className="dropdown-item">level 2</a></li>
+                        </ul>
+                    </li>
+                    {/*-- End Level two -*/}
+                    </ul>
+                </li>
                 </ul>
-              </li>
-              <!-- End Level two -->
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Projects</a>
-            <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
-              <li><a href="#" class="dropdown-item">Add New </a></li>
-              <li><a href="#" class="dropdown-item">Some other action</a></li>
 
-              <li class="dropdown-divider"></li>
-
-              <!-- Level two dropdown-->
-              <li class="dropdown-submenu dropdown-hover">
-                <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">My Projects</a>
-                <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item">level 2</a>
-                  </li>
-                  <li><a href="#" class="dropdown-item">level 2</a></li>
-                  <li><a href="#" class="dropdown-item">level 2</a></li>
-                </ul>
-              </li>
-              <!-- End Level two -->
-            </ul>
-          </li>
-        </ul>
-
-        <!-- SEARCH FORM -->
-        <form class="form-inline ml-0 ml-md-3">
-          <div class="input-group input-group-sm">
-            <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-            <div class="input-group-append">
-              <button class="btn btn-navbar" type="submit">
-                <i class="fas fa-search"></i>
-              </button>
+                {/*-- SEARCH FORM -*/}
+                <form className="form-inline ml-0 ml-md-3">
+                    <div className="input-group input-group-sm">
+                        <input className="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search"/>
+                        <div className="input-group-append">
+                        <button className="btn btn-navbar" type="submit">
+                            <i className="fas fa-search"></i>
+                        </button>
+                        </div>
+                    </div>
+                </form>
             </div>
-          </div>
-        </form>
-      </div>
 
-      <!-- Right navbar links -->
-      <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
-        <!-- Messages Dropdown Menu -->
-        <li class="nav-item dropdown">
-          <a class="nav-link" data-toggle="dropdown" href="#">
-            <i class="fas fa-comments"></i>
-            <span class="badge badge-danger navbar-badge">3</span>
-          </a>
-          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-            <a href="#" class="dropdown-item">
-              <!-- Message Start -->
-              <div class="media">
-                <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
-                <div class="media-body">
-                  <h3 class="dropdown-item-title">
-                    Brad Diesel
-                    <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
-                  </h3>
-                  <p class="text-sm">Call me whenever you can...</p>
-                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+            {/*-- Right navbar links -*/}
+            <ul className="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+                {/*-- Messages Dropdown Menu -*/}
+                <li className="nav-item dropdown">
+                <a className="nav-link" data-toggle="dropdown" href="#">
+                    <i className="fas fa-comments"></i>
+                    <span className="badge badge-danger navbar-badge">3</span>
+                </a>
+                <div className="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                    <a href="#" className="dropdown-item">
+                    {/*-- Message Start -*/}
+                    <div className="media">
+                        <img src="dist/img/user1-128x128.jpg" alt="User Avatar" className="img-size-50 mr-3 img-circle"/>
+                        <div className="media-body">
+                        <h3 className="dropdown-item-title">
+                            Brad Diesel
+                            <span className="float-right text-sm text-danger"><i className="fas fa-star"></i></span>
+                        </h3>
+                        <p className="text-sm">Call me whenever you can...</p>
+                        <p className="text-sm text-muted"><i className="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                        </div>
+                    </div>
+                    {/*-- Message End -*/}
+                    </a>
+                    <div className="dropdown-divider"></div>
+                    <a href="#" className="dropdown-item">
+                    {/*-- Message Start -*/}
+                    <div className="media">
+                        <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" className="img-size-50 img-circle mr-3"/>
+                        <div className="media-body">
+                        <h3 className="dropdown-item-title">
+                            John Pierce
+                            <span className="float-right text-sm text-muted"><i className="fas fa-star"></i></span>
+                        </h3>
+                        <p className="text-sm">I got your message bro</p>
+                        <p className="text-sm text-muted"><i className="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                        </div>
+                    </div>
+                    {/*-- Message End -*/}
+                    </a>
+                    <div className="dropdown-divider"></div>
+                    <a href="#" className="dropdown-item">
+                    {/*-- Message Start -*/}
+                    <div className="media">
+                        <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" className="img-size-50 img-circle mr-3"/>
+                        <div className="media-body">
+                        <h3 className="dropdown-item-title">
+                            Nora Silvester
+                            <span className="float-right text-sm text-warning"><i className="fas fa-star"></i></span>
+                        </h3>
+                        <p className="text-sm">The subject goes here</p>
+                        <p className="text-sm text-muted"><i className="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                        </div>
+                    </div>
+                    {/*-- Message End -*/}
+                    </a>
+                    <div className="dropdown-divider"></div>
+                    <a href="#" className="dropdown-item dropdown-footer">See All Messages</a>
                 </div>
-              </div>
-              <!-- Message End -->
-            </a>
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item">
-              <!-- Message Start -->
-              <div class="media">
-                <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-                <div class="media-body">
-                  <h3 class="dropdown-item-title">
-                    John Pierce
-                    <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
-                  </h3>
-                  <p class="text-sm">I got your message bro</p>
-                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </li>
+                {/*-- Notifications Dropdown Menu -*/}
+                <li className="nav-item dropdown">
+                <a className="nav-link" data-toggle="dropdown" href="#">
+                    <i className="far fa-bell"></i>
+                    <span className="badge badge-warning navbar-badge">15</span>
+                </a>
+                <div className="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                    <span className="dropdown-header">15 Notifications</span>
+                    <div className="dropdown-divider"></div>
+                    <a href="#" className="dropdown-item">
+                    <i className="fas fa-envelope mr-2"></i> 4 new messages
+                    <span className="float-right text-muted text-sm">3 mins</span>
+                    </a>
+                    <div className="dropdown-divider"></div>
+                    <a href="#" className="dropdown-item">
+                    <i className="fas fa-users mr-2"></i> 8 friend requests
+                    <span className="float-right text-muted text-sm">12 hours</span>
+                    </a>
+                    <div className="dropdown-divider"></div>
+                    <a href="#" className="dropdown-item">
+                    <i className="fas fa-file mr-2"></i> 3 new reports
+                    <span className="float-right text-muted text-sm">2 days</span>
+                    </a>
+                    <div className="dropdown-divider"></div>
+                    <a href="#" className="dropdown-item dropdown-footer">See All Notifications</a>
                 </div>
-              </div>
-              <!-- Message End -->
-            </a>
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item">
-              <!-- Message Start -->
-              <div class="media">
-                <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-                <div class="media-body">
-                  <h3 class="dropdown-item-title">
-                    Nora Silvester
-                    <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
-                  </h3>
-                  <p class="text-sm">The subject goes here</p>
-                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-                </div>
-              </div>
-              <!-- Message End -->
-            </a>
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
-          </div>
-        </li>
-        <!-- Notifications Dropdown Menu -->
-        <li class="nav-item dropdown">
-          <a class="nav-link" data-toggle="dropdown" href="#">
-            <i class="far fa-bell"></i>
-            <span class="badge badge-warning navbar-badge">15</span>
-          </a>
-          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-            <span class="dropdown-header">15 Notifications</span>
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item">
-              <i class="fas fa-envelope mr-2"></i> 4 new messages
-              <span class="float-right text-muted text-sm">3 mins</span>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item">
-              <i class="fas fa-users mr-2"></i> 8 friend requests
-              <span class="float-right text-muted text-sm">12 hours</span>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item">
-              <i class="fas fa-file mr-2"></i> 3 new reports
-              <span class="float-right text-muted text-sm">2 days</span>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#"><i
-              class="fas fa-th-large"></i></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- /.navbar --></ul>
+                </li>
+                <li className="nav-item">
+                <a className="nav-link" data-widget="control-sidebar" data-slide="true" href="#"><i
+                    className="fas fa-th-large"></i></a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+        
+       
+
+  );
+    }
+}
+
+export default Aside;

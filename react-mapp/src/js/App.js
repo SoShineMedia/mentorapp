@@ -5,7 +5,8 @@ import { connect } from 'react-redux';
 import { Router, Route, Switch, Redirect } from "react-router-dom";
 //import { Router, Route, browserHistory} from 'react-router';
 //import moment from "moment";
-import App from "./components/view/App";
+//import App from "./components/view/App";
+import Default from "./components/layout/Default";
 import Home from "./components/view/Home";
 
 import { createBrowserHistory } from "history";
@@ -20,7 +21,7 @@ const DashboardRoutes = ({ layout: Layout, component: Component, ...rest }) => {
   )
 }
 
-  function Default () 
+  function App () 
   {
       console.log("default layout"+JSON.stringify(hist.location));
     return (
@@ -28,7 +29,7 @@ const DashboardRoutes = ({ layout: Layout, component: Component, ...rest }) => {
          <Switch> 
          <Route exact path={"/"} component={App} /> 
          
-         <DashboardRoutes exact path="/listings" layout={App} component={Home} />
+         <DashboardRoutes exact path="/listings" layout={Default} component={Home} />
          <Route path={"/home"} component={Home} />
          
          </Switch>      
@@ -37,7 +38,7 @@ const DashboardRoutes = ({ layout: Layout, component: Component, ...rest }) => {
   }
 
 
-export default Default;
+export default App;
 
 /*export default connect((state) => {
   return ({

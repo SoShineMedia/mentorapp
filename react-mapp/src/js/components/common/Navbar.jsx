@@ -32,7 +32,7 @@ class Aside extends Component {
                     <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" className="nav-link dropdown-toggle">Knowledge Base</a>
                     <ul aria-labelledby="dropdownSubMenu1" className="dropdown-menu border-0 shadow">
                     <li><a href="question.html" className="dropdown-item">My Questions </a></li>
-                    <li><a href="mentor.html" className="dropdown-item">My Mentors </a></li>
+                    <li><a href="mentor.html" className="dropdown-item">My Mentors </a></li> 
                     <li className="dropdown-divider"></li>
 
                     {/*-- Level two dropdown-*/}

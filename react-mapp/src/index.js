@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import ReactDOM from 'react-dom';
 //import { createBrowserHistory } from "history";
@@ -8,6 +9,18 @@ import './css/index.css';
 import './css/App.css';
 import './css/adminlte.min.css';
 import './css/fontawesome-free/css/all.min.css';
+
+import $ from "jquery";
+
+
+    //<!-- jQuery -->
+    //import './js/lib/plugins/jquery/jquery.min.js';
+    //<!-- Bootstrap 4 -->
+    //import './js/lib/plugins/bootstrap/js/bootstrap.bundle.min.js';
+    //<!-- AdminLTE App -->
+    //import './js/lib/adminlte.min.js';
+    //<!-- AdminLTE for demo purposes -->
+    //import './js/lib/demo.js';
 
 import App from './js/App';
 //import Home from './js/components/view/App';

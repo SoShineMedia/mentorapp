@@ -15,7 +15,7 @@ class Profile extends Component {
               <div className="text-center">
                 <img className="profile-user-img img-fluid img-circle"
                      src="../../dist/img/user4-128x128.jpg"
-                     alt="User profile picture"/>
+                     alt="User profile"/>
               </div>
 
               <h3 className="profile-username text-center">Nina Mcintire</h3>

@@ -41,4 +41,5 @@
 .main-header{
   top:0; width:100%; position:fixed;
 }
-.brand-image{opacity: .8}
+.brand-image{opacity: .8;}
+.content-wrapper{margin-top:40px;}

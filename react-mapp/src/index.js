@@ -5,6 +5,10 @@ import ReactDOM from 'react-dom';
 //import { Router, Route, IndexRedirect, hashHistory} from 'react-router';
 
 import './css/index.css';
+import './css/App.css';
+import './css/adminlte.min.css';
+import './css/fontawesome-free/css/all.min.css';
+
 import App from './js/App';
 //import Home from './js/components/view/App';
 //import Layout from './js/components/layout/Default';

@@ -40,7 +40,7 @@ class Aside extends Component {
                         <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" className="dropdown-item dropdown-toggle">Industries</a>
                         <ul aria-labelledby="dropdownSubMenu2" className="dropdown-menu border-0 shadow">
                         <li>
-                            <a tabindex="-1" href="industry.html" className="dropdown-item">level 2</a>
+                            <a tabIndex="-1" href="industry.html" className="dropdown-item">level 2</a>
                         </li>
                         <li><a href="#" className="dropdown-item">level 2</a></li>
                         <li><a href="#" className="dropdown-item">level 2</a></li>
@@ -62,7 +62,7 @@ class Aside extends Component {
                         <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" className="dropdown-item dropdown-toggle">My Projects</a>
                         <ul aria-labelledby="dropdownSubMenu2" className="dropdown-menu border-0 shadow">
                         <li>
-                            <a tabindex="-1" href="#" className="dropdown-item">level 2</a>
+                            <a tabIndex="-1" href="#" className="dropdown-item">level 2</a>
                         </li>
                         <li><a href="#" className="dropdown-item">level 2</a></li>
                         <li><a href="#" className="dropdown-item">level 2</a></li>

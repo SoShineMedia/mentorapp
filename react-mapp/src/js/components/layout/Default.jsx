@@ -17,16 +17,16 @@ class Default extends Component {
         <div className="wrapper">
 
             <Navbar/>
-            <div class="content-wrapper" style="margin-top:40px;">
+            <div className="content-wrapper" >
                 {/*Content Header (Page header)*/}
-                <div class="content-header">
+                <div className="content-header">
                 
                 </div>
                 {/*-- /.content-header -*/}
 
                 {/*-- Main content -*/}
-                <div class="content">
-                <div class="container">
+                <div className="content">
+                <div className="container">
                     {this.props.children}
                 </div>{/*-- /.container-fluid -*/}
                 </div>

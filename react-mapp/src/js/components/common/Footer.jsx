@@ -10,10 +10,10 @@ class Footer extends Component {
             <footer className="main-footer">
                 {/*-- To the right --*/}
                 <div className="float-right d-none d-sm-inline">
-                Anything you want
+                    Nuturing productivity!
                 </div>
                 {/*-- Default to the left --*/}
-                <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+      <strong>Copyright &copy; {new Date().getFullYear()} <a href="https://soshinemedia.com">SoShine Media</a>.</strong> All rights reserved.
             </footer>
          );
         }

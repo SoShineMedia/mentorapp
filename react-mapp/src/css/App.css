@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+
+.main-header{
+  top:0; width:100%; position:fixed;
+}
+.brand-image{opacity: .8}

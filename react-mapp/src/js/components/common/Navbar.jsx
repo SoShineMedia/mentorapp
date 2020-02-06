@@ -7,11 +7,11 @@ class Aside extends Component {
   render() {
       return (
    
-        <nav style={{top:0, width:100%, position:fixed}} className="main-header navbar navbar-fixed-top navbar-expand-md navbar-light navbar-white">
+        <nav  className="main-header navbar navbar-fixed-top navbar-expand-md navbar-light navbar-white">
             <div className="container">
             <a href="starter.html" className="navbar-brand">
                 <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3"
-                    style="opacity: .8"/>
+                    />
                 <span className="brand-text font-weight-light">Mentorship Platform</span>
             </a>
             

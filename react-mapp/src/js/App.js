@@ -8,10 +8,13 @@ import { Router, Route, Switch, Redirect } from "react-router-dom";
 //import App from "./components/view/App";
 import Default from "./components/layout/Default";
 import Home from "./components/view/Home";
+import Faq from "./components/view/Faq";
+import Inbox from "./components/view/Inbox";
+import Profile from "./components/view/Profile";
 
 import { createBrowserHistory } from "history";
 const hist = createBrowserHistory();
-const DashboardRoutes = ({ layout: Layout, component: Component, ...rest }) => {
+const AppRoutes = ({ layout: Layout, component: Component, ...rest }) => {
   return (
       <Route {...rest} render={props => (
           <Layout>
@@ -27,9 +30,11 @@ const DashboardRoutes = ({ layout: Layout, component: Component, ...rest }) => {
     return (
      <Router history={hist}>
          <Switch> 
-         <Route exact path={"/"} component={App} /> 
          
-         <DashboardRoutes exact path="/listings" layout={Default} component={Home} />
+         <AppRoutes exact path="/" layout={Default} component={Home} />
+         <AppRoutes exact path="/faq" layout={Default} component={Faq} />
+         <AppRoutes exact path="/inbox" layout={Default} component={Inbox} />
+         <AppRoutes exact path="/profile" layout={Default} component={Profile} />
          <Route path={"/home"} component={Home} />
          
          </Switch>      

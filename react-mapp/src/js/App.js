@@ -11,6 +11,7 @@ import Home from "./components/view/Home";
 import Faq from "./components/view/Faq";
 import Inbox from "./components/view/Inbox";
 import Profile from "./components/view/Profile";
+import Projects from "./components/view/ProjectList";
 
 import { createBrowserHistory } from "history";
 const hist = createBrowserHistory();
@@ -34,6 +35,7 @@ const AppRoutes = ({ layout: Layout, component: Component, ...rest }) => {
          <AppRoutes exact path="/faq" layout={Default} component={Faq} />
          <AppRoutes exact path="/inbox" layout={Default} component={Inbox} />
          <AppRoutes exact path="/profile" layout={Default} component={Profile} />
+         <AppRoutes exact path="/projects" layout={Default} component={Projects} />
          <Route path={"/home"} component={Home} />
          
          </Switch>      

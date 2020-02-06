@@ -26,7 +26,6 @@ const AppRoutes = ({ layout: Layout, component: Component, ...rest }) => {
 
   function App () 
   {
-      console.log("default layout"+JSON.stringify(hist.location));
     return (
      <Router history={hist}>
          <Switch> 

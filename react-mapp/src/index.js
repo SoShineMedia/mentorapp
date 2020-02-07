@@ -1,6 +1,9 @@
 /* eslint-disable */
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Provider} from 'react-redux';
+//import store from './store';
+import { store } from './js/stores/ReduxStore';
 //import { createBrowserHistory } from "history";
 //import { Router, Route, Switch, Redirect } from "react-router-dom";
 //import { Router, Route, IndexRedirect, hashHistory} from 'react-router';
@@ -30,7 +33,9 @@ import App from './js/App';
 //const hist = createBrowserHistory();
 
 ReactDOM.render(
-  <App />,
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById("root")
 );
 

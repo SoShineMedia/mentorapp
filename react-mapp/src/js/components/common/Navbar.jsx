@@ -9,8 +9,8 @@ class Aside extends Component {
    
         <nav  className="main-header navbar navbar-fixed-top navbar-expand-md navbar-light navbar-white">
             <div className="container">
-            <a href="starter.html" className="navbar-brand">
-                <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3"
+            <a href="/" className="navbar-brand">
+                <img src="dist/img/AdminLTELogo.png" alt="home" className="brand-image img-circle elevation-3"
                     />
                 <span className="brand-text font-weight-light">Mentorship Platform</span>
             </a>
@@ -22,9 +22,7 @@ class Aside extends Component {
             <div className="collapse navbar-collapse order-3" id="navbarCollapse">
                 {/*-- Left navbar links -*/}
                 <ul className="navbar-nav">
-                <li className="nav-item">
-                    <a href="starter.html" className="nav-link">Home</a>
-                </li>
+                
                 <li className="nav-item">
                     <a href="#" className="nav-link"></a>
                 </li>
@@ -34,7 +32,7 @@ class Aside extends Component {
                     <li><a href="question.html" className="dropdown-item">My Questions </a></li>
                     <li><a href="mentor.html" className="dropdown-item">My Mentors </a></li> 
                     <li className="dropdown-divider"></li>
-
+                    <li><a href="/faq" className="dropdown-item">FAQ</a></li> 
                     {/*-- Level two dropdown-*/}
                     <li className="dropdown-submenu dropdown-hover">
                         <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" className="dropdown-item dropdown-toggle">Industries</a>
@@ -52,8 +50,8 @@ class Aside extends Component {
                 <li className="nav-item dropdown">
                     <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" className="nav-link dropdown-toggle">Projects</a>
                     <ul aria-labelledby="dropdownSubMenu1" className="dropdown-menu border-0 shadow">
-                    <li><a href="#" className="dropdown-item">Add New </a></li>
-                    <li><a href="#" className="dropdown-item">Some other action</a></li>
+                    <li><a href="/projects/add" className="dropdown-item">Add New </a></li>
+                    
 
                     <li className="dropdown-divider"></li>
 
@@ -61,9 +59,11 @@ class Aside extends Component {
                     <li className="dropdown-submenu dropdown-hover">
                         <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" className="dropdown-item dropdown-toggle">My Projects</a>
                         <ul aria-labelledby="dropdownSubMenu2" className="dropdown-menu border-0 shadow">
+                        <li><a href="/projects" className="dropdown-item">View All</a></li>
                         <li>
                             <a tabIndex="-1" href="#" className="dropdown-item">level 2</a>
                         </li>
+                        
                         <li><a href="#" className="dropdown-item">level 2</a></li>
                         <li><a href="#" className="dropdown-item">level 2</a></li>
                         </ul>

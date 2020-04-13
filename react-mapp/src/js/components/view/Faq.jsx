@@ -7,7 +7,8 @@ class App extends Component {
       console.log("default view");
     return (
       <div className="App">
-       yeaaaaaaaa!!!!!!!!!!!!
+       Frequently asked questions
+
         
       </div>
     );

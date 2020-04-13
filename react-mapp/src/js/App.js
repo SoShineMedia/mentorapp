@@ -9,6 +9,7 @@ import { Router, Route, Switch, Redirect } from "react-router-dom";
 import Default from "./components/layout/Default";
 import Home from "./components/view/Home";
 import Faq from "./components/view/Faq";
+import Questions from "./components/view/Questions";
 import Inbox from "./components/view/Inbox";
 import Profile from "./components/view/Profile";
 import Projects from "./components/view/ProjectList";
@@ -35,6 +36,7 @@ const AppRoutes = ({ layout: Layout, component: Component, ...rest }) => {
          
          <AppRoutes exact path="/" layout={Default} component={Home} />
          <AppRoutes exact path="/faq" layout={Default} component={Faq} />
+         <AppRoutes exact path="/questions" layout={Default} component={Questions} />
          <AppRoutes exact path="/inbox" layout={Default} component={Inbox} />
          <AppRoutes exact path="/profile" layout={Default} component={Profile} />
          <AppRoutes exact path="/projects" layout={Default} component={Projects} />

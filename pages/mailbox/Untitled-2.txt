@@ -1,0 +1,25 @@
+<div className="wrapper">
+
+  <Navbar/>
+  
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="margin-top:40px;">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container">
+       
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+    <Aside />
+    <Footer />  
+</div>

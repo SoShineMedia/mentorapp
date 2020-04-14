@@ -10,7 +10,7 @@ class Aside extends Component {
         <nav  className="main-header navbar navbar-fixed-top navbar-expand-md navbar-light navbar-white">
             <div className="container">
             <a href="/" className="navbar-brand">
-                <img src="dist/img/AdminLTELogo.png" alt="home" className="brand-image img-circle elevation-3"
+                <img src="../dist/img/AdminLTELogo.png" alt="home" className="brand-image img-circle elevation-3"
                     />
                 <span className="brand-text font-weight-light">Mentorship Platform</span>
             </a>

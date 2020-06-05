@@ -36,11 +36,15 @@ const AppRoutes = ({ layout: Layout, component: Component, ...rest }) => {
          
          <AppRoutes exact path="/" layout={Default} component={Home} />
          <AppRoutes exact path="/faq" layout={Default} component={Faq} />
+         <AppRoutes exact path="/aboutus" layout={Default} component={Faq} />
+         <AppRoutes exact path="/contactus" layout={Default} component={Faq} />
+
          <AppRoutes exact path="/questions" layout={Default} component={Questions} />
-         <AppRoutes exact path="/inbox" layout={Default} component={Inbox} />
+         <AppRoutes exact path="/questions/add" layout={Default} component={Questions} />
+         <AppRoutes exact path="/questions" layout={Default} component={Questions} />
+
+         <AppRoutes exact path="/notifications" layout={Default} component={Inbox} />
          <AppRoutes exact path="/profile" layout={Default} component={Profile} />
-         <AppRoutes exact path="/projects" layout={Default} component={Projects} />
-         <AppRoutes exact path="/projects/add" layout={Default} component={AddProject} />
          <AppRoutes exact path="/mentors" layout={Default} component={Mentors} />
          <Route path={"/home"} component={Home} />
          

@@ -24,13 +24,13 @@ class Profile extends Component {
 
               <ul className="list-group list-group-unbordered mb-3">
                 <li className="list-group-item">
-                  <b>Followers</b> <a className="float-right">1,322</a>
+                  <b>Followers</b> <a href="#" className="float-right">1,322</a>
                 </li>
                 <li className="list-group-item">
-                  <b>Following</b> <a className="float-right">543</a>
+                  <b>Following</b> <a href="#" className="float-right">543</a>
                 </li>
                 <li className="list-group-item">
-                  <b>Friends</b> <a className="float-right">13,287</a>
+                  <b>Friends</b> <a href="#" className="float-right">13,287</a>
                 </li>
               </ul>
 
